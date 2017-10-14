@@ -55,6 +55,7 @@ export default class PlayerFeed extends React.Component {
         );
         return <div id={this.props.id} className="episode-feed">
                 {episodes}
+                // TO DO: Implement some paging when we get more episodes
             </div>
     }
 }
