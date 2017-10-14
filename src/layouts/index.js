@@ -1,11 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import Header from './Header';
-import Footer from './Footer';
-
-import Feed from '../components/Feed'
+import { Header, Container, Footer } from '../components/General'
 
 import './index.scss'
 
@@ -19,9 +17,9 @@ const TemplateWrapper = ({ children }) => (
     ]}
     />
     <Header />
-    <main className="container">
+    <Container >
         {children()}
-    </main>
+    </Container>
     <Footer />
     </div>
     )

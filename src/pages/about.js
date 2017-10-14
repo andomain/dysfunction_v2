@@ -1,7 +1,7 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
-import { PageTitle } from '../components/General';
-import Profile from '../components/Profile';
+import { PageTitle, Profile } from '../components/General'
 
 import sam from '../img/sam.jpg';
 import luci from '../img/luci.jpg';
@@ -17,28 +17,28 @@ const luciStrap = "I invented the dirty bidet";
 const andrewStrap = "The World's Least Convincing Canadian";
 
 const About = () => (
-    <div>
-        <PageTitle title="The Regulars" sub="What's a pub without its regulars? A shit pub, that's what!" />
-        <Profile
-            name="General Lucifer"
-            image={luci}
-            strap={luciStrap}
-            bio={luciBio}
-            link="https://www.amazon.co.uk/Pantone-Blues-G-Lucifer-ebook/dp/B008HSH42O"
-        />
-        <Profile
-            name="Andrew Rodgers"
-            image={andrew}
-            strap={andrewStrap}
-            bio={andrewBio}
-        />
-        <Profile
-            name="Sam Anderson"
-            image={sam}
-            strap={samStrap}
-            bio={samBio}
-        />    
-    </div>
+  <div className="page">
+    <PageTitle title="The Regulars" sub="What's a pub without its regulars? A shit pub, that's what!" />
+    <Profile
+        name="General Lucifer"
+        image={luci}
+        strap={luciStrap}
+        bio={luciBio}
+        link="https://www.amazon.co.uk/Pantone-Blues-G-Lucifer-ebook/dp/B008HSH42O"
+    />
+    <Profile
+        name="Andrew Rodgers"
+        image={andrew}
+        strap={andrewStrap}
+        bio={andrewBio}
+    />
+    <Profile
+        name="Sam Anderson"
+        image={sam}
+        strap={samStrap}
+        bio={samBio}
+    />    
+  </div>
 )
 
 export default About
