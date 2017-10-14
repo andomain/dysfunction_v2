@@ -13,6 +13,7 @@ const IndexPage = () => (
 	/>
     <p>Every month the Dysfunction Room regulars find a back room of a pub & sit down with a few ales to discuss books, music, paraphenalia and whatevers going on in their lives these days</p>
   </div>
+            <Feed id="episode-feed" url="http://dysfunctionroom.libsyn.com/rss" max={5}/>
 )
 
 export default IndexPage
